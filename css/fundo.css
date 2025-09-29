@@ -1,0 +1,104 @@
+/* =======================
+   Botão de selecionar wallpaper
+   ======================= */
+#botao-selecionar {
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  height: 30px;
+  width: auto;
+  padding: 0 15px; 
+  justify-content: center;
+  background-color: #1E2B32;
+  color: aliceblue;
+}
+
+/* =======================
+   Fundos (modo escuro e claro)
+   ======================= */
+body {
+  background-color: #1E2B32; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Tema escuro */
+body.dark {
+  background-color: #292c35;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tema claro */
+body.light {
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* =======================
+   Taskbar - Tema Claro
+   ======================= */
+body.light #taskbar {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+}
+
+body.light #start,
+body.light #clock {
+  color: #000000;
+}
+
+body.light #taskbar img,
+body.light #logo-icon,
+body.light #audio-icon,
+body.light #wifi-icon {
+  filter: invert(0); /* mantém as imagens originais */
+}
+
+/* Tema escuro (ícones invertidos para contraste) */
+body.dark #taskbar img {
+  filter: invert(1);
+}
+
+/* =======================
+   Menu - Tema Claro
+   ======================= */
+body.light #menu {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+}
+
+body.light #menu .header {
+  background-color: #e0e0e0;
+}
+
+body.light #menu .body li {
+  color: #000000;
+}
+
+body.light #menu .body li:hover {
+  background-color: rgba(200, 200, 200, 0.8);
+  color: #000000;
+}
+
+body.light #menu .submenu {
+  background-color: #f0f0f0;
+}
+
+body.light #menu .submenu li {
+  color: #000000;
+}
+
+body.light #menu .submenu li:hover {
+  background-color: rgba(180, 180, 180, 0.8);
+}

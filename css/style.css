@@ -1,0 +1,210 @@
+/* =======================
+   Estrutura Base do Sistema
+   ======================= */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  height: 100%;
+  background-image: url(../wallpapers/fundo-classic.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* =======================
+   Desktop + Ícones
+   ======================= */
+#desktop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  padding: 20px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 100px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.icon span {
+  display: block;
+  white-space: normal;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* =======================
+   Janelas
+   ======================= */
+.window {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Barra de título das janelas */
+.title-bar {
+  background: #2e2e2e;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-bar button,
+.fecharJanela {
+  background: #ff4c4c;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Conteúdo da janela */
+.content {
+  margin: 0;
+  padding: 20px 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.content p {
+  text-indent: 10px;
+  margin-bottom: 10px;
+}
+
+/* Ajustes do texto nas janelas */
+#vantagens .title-bar span,
+#janelas .title-bar span,
+#interface .title-bar span,
+#eventos .title-bar span,
+#api .title-bar span,
+#memoria .title-bar span,
+#multitarefa .title-bar span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* =======================
+   Barra de Tarefas
+   ======================= */
+#taskbar {
+  position: absolute;
+  bottom: 5px;
+  width: 98%;
+  height: 40px;
+  background: #1c1c1c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px; 
+}
+
+#start {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#system-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#wifi-icon,
+#audio-icon {
+  width: 20px;
+  height: 20px; 
+  cursor: pointer;
+  filter: invert(1);
+}
+
+#logo-icon {
+  height: 40px;
+  width: 40px;
+  filter: invert(1);
+}
+
+#icon-center {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+/* =======================
+   Configurações Extras
+   ======================= */
+#janela-menu {
+  height: 50px;
+}
+
+#texto-modo-escuro {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.switch-container {
+  display: flex;             
+  align-items: center;      
+  gap: 10px;      
+  justify-content: space-between;           
+}
+
+/* Tooltip estilo menu */
+.tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background-color: #1E2B32;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  display: none;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}

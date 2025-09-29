@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'OS</title>
+  <link rel="icon" href="imagens/icon-head.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dark.css">
+  <link rel="stylesheet" href="css/fundo.css">
+  <link rel="stylesheet" href="css/informacoes.css">
+</head>
+<body>
+
+<!--Extrutura e Parte visual de cada Icon-->
+
+  <!-- Imagens do Desktop -->
+  <div id="desktop">
+    <div class="icon" onclick="abrirJanela('vantagens')">
+      <img src="imagens/vantagens.png"/>
+      <span>SO Gráfico</span>
+    </div>
+    <div class="icon" onclick="abrirJanela('janelas')">
+      <img src="imagens/janela.png"/>
+      <span>Janelas</span>
+    </div>
+    <div class="icon" onclick="abrirJanela('interface')">
+      <img src="imagens/interface.png"/>
+      <span>Interface</span>
+    </div>
+    <div class="icon" onclick="abrirJanela('eventos')">
+      <img src="imagens/eventos.png"/>
+      <span>Eventos</span>
+    </div>
+    <div class="icon" onclick="abrirJanela('api')">
+      <img src="imagens/api.png"/>
+      <span>API</span>
+    </div>
+    <div class="icon" onclick="abrirJanela('memoria')">
+      <img src="imagens/memoria.png"/>
+      <span>Modelo de Memória</span>
+    </div>
+    <div class="icon" onclick="abrirJanela('multitarefa')">
+      <img src="imagens/multitarefa.png"/>
+      <span>Multitarefa</span>
+    </div>
+  </div>
+
+
+<!--Extrutura e Parte visual de cada Janela-->
+
+  <!-- Vantagens SO Gráfico-->
+  <div id="vantagens" class="window">
+    <div class="title-bar">
+      <span>💡 Vantagens de um SO Gráfico</span>
+      <button onclick="fecharJanela('vantagens')">✕</button>
+    </div>
+    <div class="content">
+      <ul>
+        <p>Um sistema operativo gráfico oferece uma interface baseada em elementos visuais como janelas, ícones, menus e botões, 
+          o que torna a interação mais simples e intuitiva.</p>
+        <p>A utilização é acessível mesmo para quem não tem conhecimentos técnicos, ao contrário das interfaces em linha de comandos.</p>
+        <p>Além disso, facilita o multitarefa, permite maior personalização do ambiente de trabalho e melhora a experiência do 
+          utilizador com elementos visuais apelativos e organizados.</p>
+        <p>Alguns exemplos de SO Gráficos</p>
+        <p>KDE (Linux) – interface gráfica personalizável e cheia de funcionalidades</p>
+        <p>Windows – utilização de janelas, ícones e menus de fácil acesso</p>
+        <a href="https://ptcomputador.com/Software/graphics-software/278733.html" target="_blank">Ver Mais</a> 
+      </ul>
+    </div>
+  </div>
+
+  <!--Janelas Conceito-->
+  <div id="janelas" class="window">
+    <div class="title-bar">
+      <span>💡 Conceito de Janelas</span>
+      <button onclick="fecharJanela('janelas')">✕</button>
+    </div>
+    <div class="content">
+      <ul>
+        <p>Uma janela é uma área retangular do ecrã usada pelos sistemas operativos com 
+          interface gráfica para mostrar informação ou permitir a interação com aplicações.</p>
+        <p>Cada janela funciona de forma independente, podendo ser aberta, fechada, 
+          minimizada, maximizada ou redimensionada pelo utilizador.</p>
+        <p>O conceito de janela facilita o uso do computador porque permite trabalhar 
+          com várias aplicações ao mesmo tempo, de forma organizada e visualmente separada.</p>
+        <p>Alguns exemplos de Janelas:</p>
+        <p>• Janela de um navegador – mostra páginas da internet.</p>
+        <p>• Janelas de mensagens – exibem alertas ou notificações.</p>
+        <a href="https://hospedagensdesite.com.br/glossario/o-que-e-janelas-do-sistema/" target="_blank">Ver Mais</a> 
+      </ul>
+    </div>
+  </div>
+
+  <!--Interface Conceito-->
+  <div id="interface" class="window">
+    <div class="title-bar">
+      <span>💡 Conceito de Interface com o utilizador</span>
+      <button onclick="fecharJanela('interface')">✕</button>
+    </div>
+    <div class="content">
+      <ul>
+        <p>A interface com o utilizador é o meio através do qual uma pessoa interage com um sistema
+           ou aplicação. Pode ser composta por elementos gráficos (botões, menus, janelas), comandos 
+           de texto ou até comandos por voz e gestos.</p>
+        <p>O objetivo é facilitar a comunicação entre o utilizador e o computador, tornando a 
+          utilização do sistema mais simples, eficiente e intuitiva.</p>
+        <p>Quanto melhor for a interface, mais fácil é para o utilizador realizar as suas tarefas.</p>
+        <p>Alguns exemplos de Interfaces com o Utilizador:</p>
+        <p>• Interface gráfica (GUI) – janelas, ícones e menus usados em sistemas como Windows ou macOS.</p>
+        <p>• Interface em linha de comandos (CLI) – interações feitas através de comandos de texto, como no Linux.</p>
+        <a href="https://conceitosdomundo.pt/interface/" target="_blank">Ver Mais</a> 
+      </ul>
+    </div>
+  </div>
+
+  <!--Eventos Conceito-->
+  <div id="eventos" class="window">
+    <div class="title-bar">
+      <span>💡 Programação por Eventos e Filas de Eventos</span>
+      <button onclick="fecharJanela('eventos')">✕</button>
+    </div>
+    <div class="content">
+      <ul>
+        <p>A programação por eventos é um modelo em que o fluxo do programa depende de 
+          acontecimentos externos, como cliques do rato, toques no ecrã ou mensagens recebidas.</p>
+        <p>Em vez de executar instruções de forma contínua, o programa espera que ocorram eventos 
+          e reage a cada um deles com funções específicas (handlers).</p>
+        <p>As filas de eventos são estruturas usadas para armazenar esses acontecimentos à medida
+           que surgem.</p>
+        <p>O sistema coloca cada evento na fila e o programa vai processando um de cada
+            vez, pela ordem de chegada, garantindo que nenhum se perde.</p>
+        <p>Alguns exemplos de Programação por Eventos:</p>
+        <p>• Interface gráfica – clicar num botão abre uma nova janela.</p>
+        <p>• Aplicações web – um servidor recebe pedidos de utilizadores e processa-os em fila.</p>
+        <a href="https://maestrovirtuale.com/programacao-orientada-a-eventos-recursos-exemplos-beneficios-aplicativos/" target="_blank">Ver Mais</a> 
+      </ul>
+    </div>
+  </div>
+
+  <!--Api Conceito-->
+  <div id="api" class="window">
+    <div class="title-bar">
+      <span>💡 Conceito de API</span>
+      <button onclick="fecharJanela('api')">✕</button>
+    </div>
+    <div class="content">
+      <ul>
+        <p>A API do sistema operativo (Application Programming Interface) é um conjunto de 
+          rotinas e funções que permitem às aplicações comunicar com o sistema operativo.</p>
+        <p>O objetivo é dar acesso a funcionalidades como ficheiros, memória, processos
+           ou dispositivos, sem que o programador precise de conhecer os detalhes técnicos internos do sistema.</p>
+        <p>Assim, facilita o desenvolvimento de software e garante compatibilidade 
+          entre aplicações e o sistema operativo.</p>
+        <p>Alguns exemplos de API'S:</p>
+        <p>• Windows API (WinAPI) - criação de janelas, gestão de processos, ficheiros, etc.</p>
+        <p>• POSIX - padrão usado em sistemas Linux/Unix para chamadas ao sistema.</p>
+        <a href="https://www.alura.com.br/artigos/api" target="_blank">Ver Mais</a> 
+      </ul>
+    </div>
+  </div>
+
+  <!--Modelo de Memória Conceito-->
+  <div id="memoria" class="window">
+    <div class="title-bar">
+      <span>💡 Conceito de Modelo de Memória</span>
+      <button onclick="fecharJanela('memoria')">✕</button>
+    </div>
+    <div class="content">
+      <ul>
+        <p>O modelo de memória refere-se à forma como os dados são organizados e geridos 
+          durante a execução de aplicações, sendo essencial para garantir bom desempenho e estabilidade.</p>
+        <p>Nas aplicações gráficas, esta gestão é particularmente importante devido ao grande volume de
+           informações visuais processadas.</p>
+        <p>Uma organização eficiente permite utilizar os recursos de forma otimizada, evitando falhas 
+          e melhorando a fluidez da interface.</p>
+        <p>Alguns exemplos de Gestão de Memória:</p>
+        <p>• OpenGL – permite ao programador controlar diretamente a alocação e libertação de memória gráfica.</p>
+        <p>• Windows – gere a memória de forma automática, otimizando o desempenho das aplicações gráficas.</p>
+        <a href="https://pt.wikiversity.org/wiki/Introdu%C3%A7%C3%A3o_aos_Sistemas_Operacionais/Ger%C3%AAncia_de_Mem%C3%B3ria" target="_blank">Ver Mais</a> 
+      </ul>
+    </div>
+  </div>
+
+  <!--Conceito de Multitarefa-->
+  <div id="multitarefa" class="window">
+    <div class="title-bar">
+      <span>💡 Conceitos de Multitarefa</span>
+      <button onclick="fecharJanela('multitarefa')">✕</button>
+    </div>
+    <div class="content">
+      <ul>
+        <p>O conceito de multitarefa está relacionado com a capacidade de um sistema executar vários processos 
+          ou threads em simultâneo.</p>
+        <p>Esta funcionalidade permite que diferentes programas ou tarefas sejam geridos ao mesmo tempo, 
+          garantindo maior eficiência e aproveitamento dos recursos do sistema.</p>
+        <p>Num ambiente gráfico, a multitarefa é essencial para que várias janelas e aplicações funcionem 
+          de forma fluida, sem interrupções ou bloqueios, proporcionando uma experiência mais dinâmica ao utilizador.</p>
+        <p>Alguns exemplos de Multitarefa:</p>
+        <p>• Windows – permite executar múltiplas aplicações em paralelo, com um gestor de tarefas que 
+          distribui os recursos entre processos.</p>
+        <p>• Linux – utiliza um sistema de agendamento avançado que gere de forma eficiente processos e 
+          threads em ambientes gráficos.</p>
+        <a href="https://digitalmentetech.com/glossario/o-que-e-multitarefa/" target="_blank">Ver Mais</a> 
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Barra de tarefas -->
+  <div id="taskbar">
+    <div id="start" onclick="toggleMenu()">☰ Menu</div>
+
+    <div id="icon-center">
+      <img src="imagens/D'OS.png" alt="LOGO" id="logo-icon">
+    </div>
+
+    <!-- Ícones do sistema (WiFi + Relógio) -->
+    <div id="system-icons">
+      <img src="imagens/audio.png" alt="AUDIO" id="audio-icon">
+      <img src="imagens/wifi.png" alt="WiFi" id="wifi-icon"> 
+      <span id="clock"></span>
+    </div>
+  </div>
+
+  
+
+<!-- Menu iniciar -->
+<div id="menu">
+  <div class="header">
+    <div class="switch-container">
+      <h3>Menu</h3>
+      <button onclick="toggleMenu()" class="fecharJanela">✕</button>
+    </div>
+  </div>
+   <div class="body">
+    <ul>
+      <!--Definições-->
+      <li>
+        Definições
+        <ul class="submenu">
+          <li class="menu-item">
+            <!--Modo Escuro Sub-opção-->
+            <span>Modo Claro</span>
+              <div class="switch">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <div class="ball"></div>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </li>
+      <li>
+      <!--Wallpaper-->
+        Wallpaper
+        <ul class="submenu">
+          <li class="menu-item">
+            <!--Opção para Mudar Wallpaper-->
+              <div class="switch-container">
+                <button id="botao-selecionar">Clique Para Mudar o Wallpaper</button>
+                <input type="file" id="input-imagem" accept="image/*" style="display: none;">
+              </div>
+          </li>
+        </ul>
+      </li>
+      <!--Sistema-->
+      <li>Sistema
+        <ul class="submenu">
+          <li class="menu-item"><span>Versão: D'OS 1.01</span></li>
+          <li class="menu-item"><span id="cpu-info">CPU: Carregando...</span></li>
+          <li class="menu-item"><span id="gpu-info">GPU: Carregando...</span></li> 
+        </ul>
+      </li>
+      <!--Créditos-->
+      <li>Créditos
+        <ul class="submenu">
+          <li class="menu-item"><span>Feito por: Diogo Aguiar</span></li>
+          <li class="menu-item"><span>Agradecimentos: Professora Teresa Almeida e Turma 2N</span></li>
+        </ul>
+      </li>
+      <!--Licensa--> 
+      <li>Licensa
+        <ul class="submenu">
+          <li class="menu-item"><span>Todo o conteúdo deste site é de código aberto e pode ser usado livremente, com crédito aos autores.</span></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
