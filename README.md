@@ -30,7 +30,7 @@ Instead of just presenting theory, D'OS demonstrates how these ideas can be visu
 
 📜 License
 D'OS is released as open-source software.
-✅ Free to use, modify, and distribute
+ ✅ Free to use, modify, and distribute
 📌 Please credit the author when reusing this project
 
 👤 Credits
