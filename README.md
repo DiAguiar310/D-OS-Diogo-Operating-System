@@ -3,13 +3,7 @@
 D'OS (Diogo Operating System) is an open-source, browser-based project that simulates the look and feel of a graphical Operating System (OS).
 It was originally created as a complement for a research presentation about programming concepts such as APIs, multitasking, memory models, user interfaces, and event-driven programming.
 
-🚀 Features
-🖥️ Desktop Environment with draggable windows and interactive icons
-🌗 Light & Dark Mode toggle
-🖼️ Wallpaper Management – default wallpapers + custom upload support
-⏰ Taskbar with real-time clock and system icons (Wi-Fi, audio, logo)
-📂 Start Menu with submenu navigation and settings
-🔍 Information windows explaining key programming concepts:
+🚀 Features: 🖥️ Desktop Environment with draggable windows and interactive icons 🌗 Light & Dark Mode toggle 🖼️ Wallpaper Management – default wallpapers + custom upload support ⏰ Taskbar with real-time clock and system icons (Wi-Fi, audio, logo) 📂 Start Menu with submenu navigation and settings 🔍 Information windows explaining key programming concepts:
 
 APIs
 Memory Models
@@ -29,9 +23,7 @@ This project was developed as part of an academic research assignment to illustr
 Instead of just presenting theory, D'OS demonstrates how these ideas can be visualized inside a simulated OS environment running directly in the browser.
 
 📜 License
-D'OS is released as open-source software.
-✅ Free to use, modify, and distribute<br>
-📌 Please credit the author when reusing this project
+D'OS is released as open-source software. ✅ Free to use, modify, and distribute 📌 Please credit the author when reusing this project
 
 👤 Credits
 Developed by: Diogo Aguiar
